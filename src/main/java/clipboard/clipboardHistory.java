@@ -23,7 +23,7 @@ public class clipboardHistory {
             return;
         }
 
-        deque.addFirst(text);
+        deque.addLast(text);
 
         if (deque.size() > maxSize) {
             deque.removeLast();
